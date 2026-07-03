@@ -14,7 +14,6 @@
       }
     ],
     "runtimeDependencies": [],
-    "files": [],
     "folders": [
       {
         "fullyQualifiedName": "solution_folder"
@@ -33,6 +32,7 @@
       "staleRetentionPeriod": 180
     },
     "locks": [],
-    "key": "6ecd0de2-ec65-4884-a2f0-1f89e17d29ab"
+    "key": "6ecd0de2-ec65-4884-a2f0-1f89e17d29ab",
+    "files": []
   }
 }

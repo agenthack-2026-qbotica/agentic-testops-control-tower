@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:uipath="http://uipath.org/schema/bpmn" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" exporter="UiPath Studio Web (https://uipath.com)" exporterVersion="b52d90e7">
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:uipath="http://uipath.org/schema/bpmn" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" exporter="UiPath Studio Web (https://uipath.com)" exporterVersion="14a2ccfb">
   <bpmn:process id="Process_1" name="Process">
     <bpmn:extensionElements>
       <uipath:variables version="v1">
@@ -131,6 +131,9 @@
     </bpmn:sendTask>
     <bpmn:serviceTask id="Activity_vwculv" name="Requirement Readiness Agent">
       <bpmn:extensionElements>
+        <uipath:tags>
+          <uipath:tag key="caseTaskType">agent</uipath:tag>
+        </uipath:tags>
         <uipath:activity version="v1">
           <uipath:type value="Orchestrator.StartAgentJob" version="v2" />
           <uipath:context>
@@ -156,6 +159,9 @@
     </bpmn:exclusiveGateway>
     <bpmn:serviceTask id="Activity_4KzsH3" name="Release Risk and Test Selection Agent">
       <bpmn:extensionElements>
+        <uipath:tags>
+          <uipath:tag key="caseTaskType">agent</uipath:tag>
+        </uipath:tags>
         <uipath:activity version="v1">
           <uipath:type value="Orchestrator.StartAgentJob" version="v2" />
           <uipath:context>
@@ -182,6 +188,9 @@
     </bpmn:exclusiveGateway>
     <bpmn:serviceTask id="Activity_GWqM6U" name="Generate Governed Release Decision Agent">
       <bpmn:extensionElements>
+        <uipath:tags>
+          <uipath:tag key="caseTaskType">agent</uipath:tag>
+        </uipath:tags>
         <uipath:activity version="v1">
           <uipath:type value="Orchestrator.StartAgentJob" version="v2" />
           <uipath:context>
@@ -229,6 +238,9 @@
     </bpmn:sendTask>
     <bpmn:serviceTask id="Activity_6M1PFA" name="Test Failure Triage Agent">
       <bpmn:extensionElements>
+        <uipath:tags>
+          <uipath:tag key="caseTaskType">agent</uipath:tag>
+        </uipath:tags>
         <uipath:activity version="v1">
           <uipath:type value="Orchestrator.StartAgentJob" version="v2" />
           <uipath:context>
@@ -310,6 +322,9 @@
     </bpmn:sendTask>
     <bpmn:serviceTask id="Activity_dDOVAx" name="Review Automation Fix Pull Request">
       <bpmn:extensionElements>
+        <uipath:tags>
+          <uipath:tag key="caseTaskType">agent</uipath:tag>
+        </uipath:tags>
         <uipath:activity version="v1">
           <uipath:type value="Orchestrator.StartAgentJob" version="v2" />
           <uipath:context>
@@ -391,6 +406,9 @@
     </bpmn:exclusiveGateway>
     <bpmn:serviceTask id="Activity_ig5dWf" name="Execute Selected Test Set">
       <bpmn:extensionElements>
+        <uipath:tags>
+          <uipath:tag key="caseTaskType">api-workflow</uipath:tag>
+        </uipath:tags>
         <uipath:activity version="v1">
           <uipath:type value="Orchestrator.ExecuteApiWorkflowAsync" version="v2" />
           <uipath:context>
