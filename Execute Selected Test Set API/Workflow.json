@@ -280,7 +280,7 @@
                 "script": {
                   "code": "const sel = $workflow.input.listofselectedTestCases || []; const tc = $context.outputs.http_request_2; const data = (tc && tc.content && tc.content.data) || []; const bs = String.fromCharCode(92); const ids = data.filter(function(t){ if(!t.automationId) return false; const pen = t.packageEntryPointName ? String(t.packageEntryPointName).split(bs).pop() : null; const nm = t.name ? String(t.name) : null; return (pen && sel.indexOf(pen) >= 0) || (nm && sel.indexOf(nm) >= 0); }).map(function(t){ return t.id; }); return ids;",
                   "language": "javascript",
-                  "arguments": "${{\n                        \"$context\": $context,\n                        \"$workflow\": $workflow,\n                        \"$input\": $input,\n                    }}"
+                  "arguments": "${{\n                        \"$context\": $context,\n                        \"$workflow\": { input: $workflow.input },\n                        \"$input\": $input,\n                    }}"
                 }
               },
               "export": {
@@ -299,7 +299,7 @@
                 "script": {
                   "code": "const v=$context.variables; return { name: 'AgentRun_'+Date.now(), description: '', projectId: v.projectId, enableCoverage: false };",
                   "language": "javascript",
-                  "arguments": "${{\n                        \"$context\": $context,\n                        \"$workflow\": $workflow,\n                        \"$input\": $input,\n                    }}"
+                  "arguments": "${{\n                        \"$context\": $context,\n                        \"$workflow\": { input: $workflow.input },\n                        \"$input\": $input,\n                    }}"
                 }
               },
               "export": {
@@ -402,7 +402,7 @@
                 "script": {
                   "code": "return $context.outputs.MatchTestCases || [];",
                   "language": "javascript",
-                  "arguments": "${{\n                        \"$context\": $context,\n                        \"$workflow\": $workflow,\n                        \"$input\": $input,\n                    }}"
+                  "arguments": "${{\n                        \"$context\": $context,\n                        \"$workflow\": { input: $workflow.input },\n                        \"$input\": $input,\n                    }}"
                 }
               },
               "export": {
@@ -455,7 +455,7 @@
                 "script": {
                   "code": "function g(){return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g,function(c){var r=Math.random()*16|0,v=c==='x'?r:(r&0x3|0x8);return v.toString(16);});} const v=$context.variables; return { runtimeType: 'AutomationCloudTestAutomation', robotName: v.robotName, robotUserKey: v.robotUserKey, machineKey: v.machineKey, correlationId: g() };",
                   "language": "javascript",
-                  "arguments": "${{\n                        \"$context\": $context,\n                        \"$workflow\": $workflow,\n                        \"$input\": $input,\n                    }}"
+                  "arguments": "${{\n                        \"$context\": $context,\n                        \"$workflow\": { input: $workflow.input },\n                        \"$input\": $input,\n                    }}"
                 }
               },
               "export": {
@@ -508,7 +508,7 @@
                 "script": {
                   "code": "function g(){return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g,function(c){var r=Math.random()*16|0,v=c==='x'?r:(r&0x3|0x8);return v.toString(16);});} return { correlationId: g() };",
                   "language": "javascript",
-                  "arguments": "${{\n                        \"$context\": $context,\n                        \"$workflow\": $workflow,\n                        \"$input\": $input,\n                    }}"
+                  "arguments": "${{\n                        \"$context\": $context,\n                        \"$workflow\": { input: $workflow.input },\n                        \"$input\": $input,\n                    }}"
                 }
               },
               "export": {
@@ -715,7 +715,7 @@
                 "script": {
                   "code": "const ws = $context.outputs.http_request_4; const stats = (ws && ws.content) || {}; const lg = $context.outputs.http_request_5; const logs = (lg && lg.content && lg.content.data) || []; const ex = $context.outputs.http_request_3; const exec = (ex && ex.content) || {}; const ids = $context.outputs.MatchTestCases || []; const jobErrors = logs.filter(function(l){ return l.status && String(l.status).toLowerCase() === 'failed'; }).map(function(l){ return { name: l.name || '', error: l.errorMessage || 'Test case failed' }; }); const report = { testSetId: $context.variables.testSetId, testSetName: exec.name || '', status: $context.variables.execStatus, totalTests: ids.length, passed: stats.passed || 0, failed: stats.failed || 0, none: stats.none || 0 }; return { TestSetReport_json: report, jobErrors: jobErrors };",
                   "language": "javascript",
-                  "arguments": "${{\n                        \"$context\": $context,\n                        \"$workflow\": $workflow,\n                        \"$input\": $input,\n                    }}"
+                  "arguments": "${{\n                        \"$context\": $context,\n                        \"$workflow\": { input: $workflow.input },\n                        \"$input\": $input,\n                    }}"
                 }
               },
               "export": {
