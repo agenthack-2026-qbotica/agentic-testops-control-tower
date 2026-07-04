@@ -13,7 +13,26 @@
         "kind": "package"
       }
     ],
-    "runtimeDependencies": [],
+    "runtimeDependencies": [
+      {
+        "bindingType": "Connection",
+        "bindingKey": "ImplicitConnection",
+        "bindingValues": {
+          "connectionId": {
+            "defaultValue": "ImplicitConnection",
+            "isExpression": false
+          }
+        },
+        "bindingMetadata": {
+          "activityName": "Get Execution Stats",
+          "bindingsVersion": "2.2",
+          "solutionsSupport": "true",
+          "isSolutionResource": true
+        },
+        "resourceKind": "Connection",
+        "resourceType": "uipath-uipath-http"
+      }
+    ],
     "folders": [
       {
         "fullyQualifiedName": "solution_folder"

@@ -23,7 +23,7 @@
             "isExpression": false
           },
           "entryPointUniqueId": {
-            "defaultValue": "58974a5c-2dfc-4afd-bfa4-4c997bb889da",
+            "defaultValue": "63beaf86-66b0-43ff-9919-21ee4b7e67af",
             "isExpression": false
           }
         },
@@ -90,23 +90,6 @@
       },
       {
         "bindingType": "process",
-        "bindingKey": "Execute Selected Test Set",
-        "bindingValues": {
-          "name": {
-            "defaultValue": "Execute Selected Test Set",
-            "isExpression": false
-          }
-        },
-        "bindingMetadata": {
-          "activityName": "Execute Selected Test Set",
-          "bindingsVersion": "2.2",
-          "solutionsSupport": "true",
-          "isSolutionResource": true
-        },
-        "resourceKind": "Process"
-      },
-      {
-        "bindingType": "process",
         "bindingKey": "Failure Triage Release Go - No-Go Decision Agent",
         "bindingValues": {
           "name": {
@@ -167,6 +150,23 @@
         },
         "bindingMetadata": {
           "activityName": "Review Automation Fix Pull Request",
+          "bindingsVersion": "2.2",
+          "solutionsSupport": "true",
+          "isSolutionResource": true
+        },
+        "resourceKind": "Process"
+      },
+      {
+        "bindingType": "process",
+        "bindingKey": "Execute Selected Test Set API",
+        "bindingValues": {
+          "name": {
+            "defaultValue": "Execute Selected Test Set API",
+            "isExpression": false
+          }
+        },
+        "bindingMetadata": {
+          "activityName": "Execute Selected Test Set",
           "bindingsVersion": "2.2",
           "solutionsSupport": "true",
           "isSolutionResource": true

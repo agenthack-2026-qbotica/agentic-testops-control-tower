@@ -161,11 +161,11 @@
     },
     {
       "resource": "process",
-      "key": "Execute Selected Test Set API",
-      "id": "processExecute Selected Test Set API",
+      "key": "Execute Selected Test Set API_1",
+      "id": "processExecute Selected Test Set API_1",
       "value": {
         "name": {
-          "defaultValue": "Execute Selected Test Set API",
+          "defaultValue": "Execute Selected Test Set API_1",
           "isExpression": false,
           "displayName": "Process name"
         }

@@ -43,7 +43,12 @@
       "Bash(gh repo *)",
       "Bash(uip is *)",
       "Bash(grep -iA12 Commands)",
-      "Bash(grep -iA18 \"Usage\\\\|Options\")"
+      "Bash(grep -iA18 \"Usage\\\\|Options\")",
+      "Bash(uip solution *)",
+      "Bash(uip login *)",
+      "Bash(grep -c 'input: \\\\$workflow.input' 'Execute Selected Test Set API/Workflow.json')",
+      "Bash(grep -c '\\\\\\\\\"\\\\$workflow\\\\\\\\\": \\\\$workflow,' 'Execute Selected Test Set API/Workflow.json')",
+      "Bash(echo \"exit=$?\")"
     ]
   }
 }

@@ -1,0 +1,49 @@
+{
+  "docVersion": "1.0.0",
+  "resource": {
+    "name": "Execute Selected Test Set API_1",
+    "kind": "process",
+    "type": "api",
+    "apiVersion": "orchestrator.uipath.com/v1",
+    "isOverridable": true,
+    "dependencies": [
+      {
+        "name": "agentic-testops-control-tower.Api.Execute.Selected.Test.Set.API",
+        "kind": "Package"
+      }
+    ],
+    "runtimeDependencies": [],
+    "folders": [
+      {
+        "fullyQualifiedName": "solution_folder"
+      }
+    ],
+    "spec": {
+      "type": "Api",
+      "name": "Execute Selected Test Set API_1",
+      "package": {
+        "name": "agentic-testops-control-tower.Api.Execute.Selected.Test.Set.API",
+        "key": "agentic-testops-control-tower.Api.Execute.Selected.Test.Set.API:1.0.4"
+      },
+      "packageName": "agentic-testops-control-tower.Api.Execute.Selected.Test.Set.API",
+      "packageVersion": "1.0.4",
+      "entryPointUniqueId": "4c90ba55-6547-446c-8bd1-cb08c7cc8507",
+      "entryPointName": "content/Workflow.json",
+      "inputArgumentsSchemaV2": "{\n  \"type\": \"object\",\n  \"title\": \"Inputs\",\n  \"properties\": {\n    \"listofselectedTestCases\": {\n      \"type\": \"array\",\n      \"title\": \"Selected Test Cases\",\n      \"description\": \"Array of test case names to execute\",\n      \"items\": {\n        \"type\": \"string\",\n        \"title\": \"Test Case Name\"\n      }\n    }\n  },\n  \"required\": [\n    \"listofselectedTestCases\"\n  ]\n}",
+      "outputArgumentsSchemaV2": "{\n  \"type\": \"object\",\n  \"title\": \"Outputs\",\n  \"properties\": {\n    \"TestSetReport_json\": {\n      \"type\": \"object\"\n    },\n    \"jobErrors\": {\n      \"type\": \"array\"\n    }\n  },\n  \"required\": [\n    \"TestSetReport_json\",\n    \"jobErrors\"\n  ]\n}",
+      "hiddenForAttendedUser": false,
+      "alwaysRunning": false,
+      "autoStartProcess": false,
+      "targetFrameworkValue": "Portable",
+      "retentionAction": "Delete",
+      "retentionPeriod": 30,
+      "staleRetentionAction": "Delete",
+      "staleRetentionPeriod": 180,
+      "entryPoints": "[{\"UniqueId\":\"4c90ba55-6547-446c-8bd1-cb08c7cc8507\",\"Path\":\"content/Workflow.json\",\"DisplayName\":null,\"InputArguments\":\"{\\n  \\\"type\\\": \\\"object\\\",\\n  \\\"title\\\": \\\"Inputs\\\",\\n  \\\"properties\\\": {\\n    \\\"listofselectedTestCases\\\": {\\n      \\\"type\\\": \\\"array\\\",\\n      \\\"title\\\": \\\"Selected Test Cases\\\",\\n      \\\"description\\\": \\\"Array of test case names to execute\\\",\\n      \\\"items\\\": {\\n        \\\"type\\\": \\\"string\\\",\\n        \\\"title\\\": \\\"Test Case Name\\\"\\n      }\\n    }\\n  },\\n  \\\"required\\\": [\\n    \\\"listofselectedTestCases\\\"\\n  ]\\n}\",\"OutputArguments\":\"{\\n  \\\"type\\\": \\\"object\\\",\\n  \\\"title\\\": \\\"Outputs\\\",\\n  \\\"properties\\\": {\\n    \\\"TestSetReport_json\\\": {\\n      \\\"type\\\": \\\"object\\\"\\n    },\\n    \\\"jobErrors\\\": {\\n      \\\"type\\\": \\\"array\\\"\\n    }\\n  },\\n  \\\"required\\\": [\\n    \\\"TestSetReport_json\\\",\\n    \\\"jobErrors\\\"\\n  ]\\n}\",\"Type\":6,\"TargetRuntime\":null,\"ContentRoot\":null,\"DataVariation\":null,\"Id\":14279767}]",
+      "tags": []
+    },
+    "locks": [],
+    "key": "6a0f394c-27e8-494a-9e2c-d0d877c200e0",
+    "files": []
+  }
+}

@@ -17,7 +17,7 @@
       "connectorName": "GitHub",
       "name": "agenthack-qbotica",
       "authenticationType": "AuthenticateAfterDeployment",
-      "connectorVersion": "2.6.12",
+      "connectorVersion": "2.6.13",
       "connectorKey": "uipath-microsoft-github",
       "pollingInterval": 1
     },
