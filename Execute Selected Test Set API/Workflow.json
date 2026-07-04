@@ -96,7 +96,7 @@
   },
   "httpRetryConfig": {
     "maxRetries": 3,
-    "delayMs": 240000,
+    "delayMs": 600000,
     "networkErrors": true,
     "statusCodes": [
       408,
