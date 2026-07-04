@@ -2,6 +2,44 @@
   "version": "2.0",
   "resources": [
     {
+      "resource": "Connection",
+      "key": "7a7864a8-92bd-4eeb-8dc2-8df3049b7bd4",
+      "id": "Connection7a7864a8-92bd-4eeb-8dc2-8df3049b7bd4",
+      "value": {
+        "ConnectionId": {
+          "defaultValue": "7a7864a8-92bd-4eeb-8dc2-8df3049b7bd4",
+          "isExpression": false,
+          "displayName": "uipath-microsoft-github connection"
+        }
+      },
+      "metadata": {
+        "ActivityName": "Search Issues and Pull Requests",
+        "BindingsVersion": "2.2",
+        "DisplayLabel": "uipath-microsoft-github connection",
+        "UseConnectionService": "true",
+        "Connector": "uipath-microsoft-github"
+      }
+    },
+    {
+      "resource": "process",
+      "key": "HITL PR Review Agent",
+      "id": "processHITL PR Review Agent",
+      "value": {
+        "name": {
+          "defaultValue": "HITL PR Review Agent",
+          "isExpression": false,
+          "displayName": "Process name"
+        }
+      },
+      "metadata": {
+        "ActivityName": "HITL PR Review Agent",
+        "BindingsVersion": "2.2",
+        "DisplayLabel": "name",
+        "SolutionsSupport": "true",
+        "subType": "Agent"
+      }
+    },
+    {
       "resource": "EventTrigger",
       "key": "7a7864a8-92bd-4eeb-8dc2-8df3049b7bd4_Event_start",
       "id": "EventTrigger7a7864a8-92bd-4eeb-8dc2-8df3049b7bd4_Event_start",
@@ -65,25 +103,6 @@
       }
     },
     {
-      "resource": "Connection",
-      "key": "7a7864a8-92bd-4eeb-8dc2-8df3049b7bd4",
-      "id": "Connection7a7864a8-92bd-4eeb-8dc2-8df3049b7bd4",
-      "value": {
-        "ConnectionId": {
-          "defaultValue": "7a7864a8-92bd-4eeb-8dc2-8df3049b7bd4",
-          "isExpression": false,
-          "displayName": "uipath-microsoft-github connection"
-        }
-      },
-      "metadata": {
-        "ActivityName": "Release Change Received",
-        "BindingsVersion": "2.2",
-        "DisplayLabel": "uipath-microsoft-github connection",
-        "UseConnectionService": "true",
-        "Connector": "uipath-microsoft-github"
-      }
-    },
-    {
       "resource": "process",
       "key": "Failure Triage Release Go - No-Go Decision Agent",
       "id": "processFailure Triage Release Go - No-Go Decision Agent",
@@ -142,30 +161,11 @@
     },
     {
       "resource": "process",
-      "key": "HITL PR Review Agent",
-      "id": "processHITL PR Review Agent",
+      "key": "Execute.Selected.TestSet",
+      "id": "processExecute.Selected.TestSet",
       "value": {
         "name": {
-          "defaultValue": "HITL PR Review Agent",
-          "isExpression": false,
-          "displayName": "Process name"
-        }
-      },
-      "metadata": {
-        "ActivityName": "Review Automation Fix Pull Request",
-        "BindingsVersion": "2.2",
-        "DisplayLabel": "name",
-        "SolutionsSupport": "true",
-        "subType": "Agent"
-      }
-    },
-    {
-      "resource": "process",
-      "key": "Execute Selected Test Set API",
-      "id": "processExecute Selected Test Set API",
-      "value": {
-        "name": {
-          "defaultValue": "Execute Selected Test Set API",
+          "defaultValue": "Execute.Selected.TestSet",
           "isExpression": false,
           "displayName": "Process name"
         }
@@ -174,8 +174,7 @@
         "ActivityName": "Execute Selected Test Set",
         "BindingsVersion": "2.2",
         "DisplayLabel": "name",
-        "SolutionsSupport": "true",
-        "subType": "Api"
+        "SolutionsSupport": "true"
       }
     }
   ]

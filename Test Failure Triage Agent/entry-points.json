@@ -5,7 +5,7 @@
     {
       "filePath": "/content/agent.json",
       "type": "agent",
-      "uniqueId": "973149e8-8376-4ad1-b897-76e5e9e07e8a",
+      "uniqueId": "c5f309aa-b55f-45f8-ac0f-c7894f99f886",
       "input": {
         "type": "object",
         "properties": {
@@ -16,8 +16,7 @@
           "Requirement": {
             "type": "string"
           }
-        },
-        "title": "Inputs"
+        }
       },
       "output": {
         "type": "object",
@@ -30,6 +29,9 @@
           },
           "fullInstructionToFix": {
             "type": "string"
+          },
+          "isEnvironmentOrTestDataIssue": {
+            "type": "boolean"
           }
         },
         "title": "Outputs"

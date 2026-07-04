@@ -113,8 +113,7 @@
   "metadata": {
     "storageVersion": "50.0.0",
     "isConversational": false,
-    "showProjectCreationExperience": false,
-    "targetRuntime": "pythonAgent"
+    "showProjectCreationExperience": false
   },
   "type": "lowCode",
   "messages": [

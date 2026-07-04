@@ -1,0 +1,134 @@
+{
+  "docVersion": "1.0.0",
+  "resource": {
+    "name": "Execute.Selected.TestSet",
+    "kind": "process",
+    "type": "process",
+    "apiVersion": "orchestrator.uipath.com/v1",
+    "isOverridable": true,
+    "dependencies": [
+      {
+        "kind": "Package",
+        "name": "Execute.Selected.TestSet"
+      }
+    ],
+    "runtimeDependencies": [
+      {
+        "bindingType": "process",
+        "bindingKey": "Shared/Execute Selected TestSet_Shared.GetExecutableTestCaseDetails",
+        "bindingValues": {
+          "folderPath": {
+            "defaultValue": "Shared/Execute Selected TestSet_Shared",
+            "isExpression": false
+          },
+          "name": {
+            "defaultValue": "GetExecutableTestCaseDetails",
+            "isExpression": false
+          }
+        },
+        "bindingMetadata": {
+          "bindingsVersion": "2.2"
+        },
+        "resourceKind": "Process",
+        "resourceKey": "2298d669-5062-434d-9506-9eb5bbd082aa",
+        "resourceName": "GetExecutableTestCaseDetails",
+        "folderKey": "38eb985c-7513-435b-a58f-33d6e61f0755"
+      },
+      {
+        "bindingType": "asset",
+        "bindingKey": "Shared/Execute Selected TestSet_Shared.Orchestrator_PAT_Text",
+        "bindingValues": {
+          "folderPath": {
+            "defaultValue": "Shared/Execute Selected TestSet_Shared",
+            "isExpression": false
+          },
+          "name": {
+            "defaultValue": "Orchestrator_PAT_Text",
+            "isExpression": false
+          }
+        },
+        "bindingMetadata": {
+          "bindingsVersion": "2.2"
+        },
+        "resourceKind": "Asset",
+        "resourceKey": "8040af81-3b38-4cf2-87f0-8cd8d3fc05cd",
+        "resourceName": "Orchestrator_PAT_Text",
+        "folderKey": "38eb985c-7513-435b-a58f-33d6e61f0755"
+      },
+      {
+        "bindingType": "processExecutionSettings",
+        "bindingKey": "Shared/Execute Selected TestSet_Shared.GetExecutableTestCaseDetails.ExecutionSettings",
+        "bindingValues": {
+          "machineTemplateName": {
+            "defaultValue": "",
+            "isExpression": false
+          },
+          "hostMachineName": {
+            "defaultValue": "",
+            "isExpression": false
+          },
+          "serviceUserName": {
+            "defaultValue": "",
+            "isExpression": false
+          },
+          "runtimeType": {
+            "defaultValue": "",
+            "isExpression": false
+          },
+          "userKey": {
+            "defaultValue": "",
+            "isExpression": false
+          },
+          "runAsMe": {
+            "defaultValue": "",
+            "isExpression": false
+          }
+        },
+        "bindingMetadata": {
+          "parentResourceKey": "Process.Shared/Execute Selected TestSet_Shared.GetExecutableTestCaseDetails",
+          "bindingsVersion": "2.2"
+        },
+        "resourceKind": "Unknown"
+      }
+    ],
+    "folders": [
+      {
+        "fullyQualifiedName": "solution_folder"
+      }
+    ],
+    "spec": {
+      "type": "Process",
+      "jobPriority": "Medium",
+      "jobRecording": "Disabled",
+      "duration": 40,
+      "frequency": 500,
+      "quality": 100,
+      "remoteControlAccess": "None",
+      "name": "Execute.Selected.TestSet",
+      "description": "N/A",
+      "package": {
+        "name": "Execute.Selected.TestSet",
+        "key": "Execute.Selected.TestSet:1.0.1"
+      },
+      "packageName": "Execute.Selected.TestSet",
+      "packageVersion": "1.0.1",
+      "entryPointUniqueId": "97b488a8-da52-406e-9a02-d5f86ecb8e37",
+      "entryPointName": "Main.xaml",
+      "inputArgumentsSchemaV2": "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"listofselectedTestCases\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"x-default-expression\": \"new System.String() {  }\"\n    }\n  },\n  \"required\": [\n    \"listofselectedTestCases\"\n  ]\n}",
+      "outputArgumentsSchemaV2": "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"TestSetReport_json\": {\n      \"type\": \"object\",\n      \"additionalProperties\": true\n    },\n    \"jobErrors\": {\n      \"type\": \"array\"\n    }\n  }\n}",
+      "hiddenForAttendedUser": false,
+      "alwaysRunning": false,
+      "autoStartProcess": false,
+      "targetFrameworkValue": "Windows",
+      "retentionAction": "Delete",
+      "retentionPeriod": 30,
+      "staleRetentionAction": "Delete",
+      "staleRetentionPeriod": 180,
+      "entryPoints": "[{\"UniqueId\":\"97b488a8-da52-406e-9a02-d5f86ecb8e37\",\"Path\":\"Main.xaml\",\"DisplayName\":null,\"InputArguments\":\"{\\n  \\\"type\\\": \\\"object\\\",\\n  \\\"properties\\\": {\\n    \\\"listofselectedTestCases\\\": {\\n      \\\"type\\\": \\\"array\\\",\\n      \\\"items\\\": {\\n        \\\"type\\\": \\\"string\\\"\\n      },\\n      \\\"x-default-expression\\\": \\\"new System.String() {  }\\\"\\n    }\\n  },\\n  \\\"required\\\": [\\n    \\\"listofselectedTestCases\\\"\\n  ]\\n}\",\"OutputArguments\":\"{\\n  \\\"type\\\": \\\"object\\\",\\n  \\\"properties\\\": {\\n    \\\"TestSetReport_json\\\": {\\n      \\\"type\\\": \\\"object\\\",\\n      \\\"additionalProperties\\\": true\\n    },\\n    \\\"jobErrors\\\": {\\n      \\\"type\\\": \\\"array\\\"\\n    }\\n  }\\n}\",\"Type\":1,\"TargetRuntime\":null,\"ContentRoot\":null,\"DataVariation\":null,\"Id\":14277597}]",
+      "tags": []
+    },
+    "locks": [],
+    "key": "12c73cbe-7252-4859-b5cb-4d8dc7449649",
+    "files": []
+  }
+}

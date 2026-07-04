@@ -3,6 +3,20 @@
   "$id": "entry-points.json",
   "entryPoints": [
     {
+      "filePath": "/content/Process 1.bpmn#Event_start",
+      "uniqueId": "9028c3a5-3282-4ee2-82aa-4ce9ac88f4f4",
+      "type": "ProcessOrchestration",
+      "input": {
+        "type": "object",
+        "properties": {}
+      },
+      "output": {
+        "type": "object",
+        "properties": {}
+      },
+      "displayName": "Start event"
+    },
+    {
       "filePath": "/content/Process.bpmn#Event_start",
       "uniqueId": "63beaf86-66b0-43ff-9919-21ee4b7e67af",
       "type": "ProcessOrchestration",

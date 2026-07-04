@@ -174,7 +174,6 @@
         "resourceKind": "Process"
       }
     ],
-    "files": [],
     "folders": [
       {
         "fullyQualifiedName": "solution_folder"
@@ -198,6 +197,7 @@
       "tags": []
     },
     "locks": [],
-    "key": "4a610f19-114e-44f9-b55f-dbc2044341e9"
+    "key": "4a610f19-114e-44f9-b55f-dbc2044341e9",
+    "files": []
   }
 }
