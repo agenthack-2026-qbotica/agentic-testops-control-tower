@@ -1,0 +1,48 @@
+{
+  "docVersion": "1.0.0",
+  "resource": {
+    "name": "PR Review Escalation App",
+    "kind": "process",
+    "type": "webApp",
+    "apiVersion": "orchestrator.uipath.com/v1",
+    "projectKey": "818f6f2a-7a0b-4869-8fb8-2aba495837b6",
+    "dependencies": [
+      {
+        "kind": "package",
+        "name": "PR Review Escalation App"
+      }
+    ],
+    "runtimeDependencies": [],
+    "folders": [
+      {
+        "fullyQualifiedName": "solution_folder"
+      }
+    ],
+    "spec": {
+      "type": "WebApp",
+      "name": "PR Review Escalation App",
+      "package": {
+        "key": "531dab1e-d2d4-4dd3-99b4-d0da6a0bcab0"
+      },
+      "packageName": "Agentic.Release.Assurance.Control.Tower.webApp.PR.Review.Escalation.App",
+      "jobPriority": "Medium",
+      "hiddenForAttendedUser": true,
+      "alwaysRunning": true,
+      "autoStartProcess": false,
+      "jobRecording": "Disabled",
+      "targetFrameworkValue": "Portable",
+      "duration": 40,
+      "frequency": 500,
+      "quality": 100,
+      "remoteControlAccess": "None",
+      "robotSize": "Automatic",
+      "retentionAction": "Delete",
+      "retentionPeriod": 30,
+      "staleRetentionAction": "Delete",
+      "staleRetentionPeriod": 180
+    },
+    "locks": [],
+    "key": "54506e8a-0ac4-42a9-8634-6564484f8570",
+    "files": []
+  }
+}

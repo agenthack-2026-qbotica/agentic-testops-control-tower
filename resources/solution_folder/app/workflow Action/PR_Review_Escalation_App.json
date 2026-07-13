@@ -1,0 +1,38 @@
+{
+  "docVersion": "1.0.0",
+  "resource": {
+    "name": "PR Review Escalation App",
+    "kind": "app",
+    "type": "workflow Action",
+    "apiVersion": "apps.uipath.com/v1",
+    "projectKey": "818f6f2a-7a0b-4869-8fb8-2aba495837b6",
+    "dependencies": [
+      {
+        "kind": "appVersion",
+        "name": "PR Review Escalation App"
+      },
+      {
+        "kind": "process",
+        "name": "PR Review Escalation App"
+      }
+    ],
+    "runtimeDependencies": [],
+    "folders": [
+      {
+        "fullyQualifiedName": "solution_folder"
+      }
+    ],
+    "spec": {
+      "name": "PR Review Escalation App",
+      "appVersionRef": {
+        "key": "f1825a42-e285-4bce-b483-bd810249a18a"
+      },
+      "codeBehindProcess": {
+        "key": "54506e8a-0ac4-42a9-8634-6564484f8570"
+      }
+    },
+    "locks": [],
+    "key": "40e48195-5a3b-4130-89dc-c9e67958dd4a",
+    "files": []
+  }
+}

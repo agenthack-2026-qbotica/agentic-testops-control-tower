@@ -1,0 +1,129 @@
+{
+  "$resourceType": "escalation",
+  "id": "68eefbd5-fa4a-4f82-a527-792ed867878f",
+  "name": "PR Review Escalation",
+  "description": "",
+  "channels": [
+    {
+      "id": "946c1e15-b410-4b36-a78e-076b65f6b92a",
+      "name": "Channel",
+      "description": "Channel description",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "RepositoryName": {
+            "type": "string",
+            "description": "The name of the GitHub repository."
+          },
+          "Owner": {
+            "type": "string",
+            "description": "The owner of the GitHub repository."
+          },
+          "PullRequestNumber": {
+            "type": "integer",
+            "description": "The number identifying the pull request."
+          },
+          "Title": {
+            "type": "string",
+            "description": "The title of the pull request."
+          },
+          "Url": {
+            "type": "string",
+            "description": "The URL to the GitHub pull request."
+          },
+          "EscalationReason": {
+            "type": "string",
+            "description": "The reason provided for escalating this pull request for review."
+          }
+        }
+      },
+      "inputSchemaDotnetTypeMapping": {
+        "RepositoryName": "System.String",
+        "Owner": "System.String",
+        "PullRequestNumber": "System.Int32",
+        "Title": "System.String",
+        "Url": "System.String",
+        "EscalationReason": "System.String"
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "HumanComment": {
+            "type": "string",
+            "description": "Optional comment from the human reviewer regarding the decision."
+          },
+          "RepositoryName": {
+            "type": "string",
+            "description": "The name of the GitHub repository."
+          },
+          "Owner": {
+            "type": "string",
+            "description": "The owner of the GitHub repository."
+          },
+          "PullRequestNumber": {
+            "type": "integer",
+            "description": "The number identifying the pull request."
+          },
+          "Title": {
+            "type": "string",
+            "description": "The title of the pull request."
+          },
+          "Url": {
+            "type": "string",
+            "description": "The URL to the GitHub pull request."
+          },
+          "EscalationReason": {
+            "type": "string",
+            "description": "The reason provided for escalating this pull request for review."
+          }
+        }
+      },
+      "outputSchemaDotnetTypeMapping": {
+        "HumanComment": "System.String",
+        "RepositoryName": "System.String",
+        "Owner": "System.String",
+        "PullRequestNumber": "System.Int32",
+        "Title": "System.String",
+        "Url": "System.String",
+        "EscalationReason": "System.String"
+      },
+      "outcomeMapping": {
+        "Approve": "continue",
+        "Reject": "continue"
+      },
+      "recipients": [
+        {
+          "type": 1,
+          "value": "1dbf3d38-9061-45ab-9d3a-bdcb7144485d",
+          "displayName": "Harikishore S"
+        }
+      ],
+      "type": "actionCenter",
+      "taskTitle": "GitHub Pull Request",
+      "properties": {
+        "appName": "PR Review Escalation App",
+        "appVersion": 1,
+        "folderName": null,
+        "resourceKey": "40e48195-5a3b-4130-89dc-c9e67958dd4a",
+        "isActionableMessageEnabled": false,
+        "actionableMessageMetaData": null
+      },
+      "taskTitleV2": {
+        "type": "textBuilder",
+        "tokens": [
+          {
+            "type": "simpleText",
+            "rawString": "GitHub Pull Request"
+          }
+        ]
+      },
+      "argumentProperties": {}
+    }
+  ],
+  "isAgentMemoryEnabled": false,
+  "governanceProperties": {
+    "isEscalatedAtRuntime": false
+  },
+  "escalationType": 0,
+  "properties": {}
+}

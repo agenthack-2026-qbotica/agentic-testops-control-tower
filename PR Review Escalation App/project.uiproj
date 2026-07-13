@@ -1,0 +1,9 @@
+{
+  "Name": "PR Review Escalation App",
+  "MainFile": "Main.xaml",
+  "ProjectType": "WebApp",
+  "WebAppSettings": {
+    "AppId": "IDf011080c49e148f28d031d441f160067",
+    "IsCoreProject": true
+  }
+}

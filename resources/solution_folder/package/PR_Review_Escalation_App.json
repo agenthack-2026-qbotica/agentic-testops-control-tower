@@ -1,0 +1,22 @@
+{
+  "docVersion": "1.0.0",
+  "resource": {
+    "name": "PR Review Escalation App",
+    "kind": "package",
+    "apiVersion": "orchestrator.uipath.com/v1",
+    "projectKey": "818f6f2a-7a0b-4869-8fb8-2aba495837b6",
+    "dependencies": [],
+    "runtimeDependencies": [],
+    "folders": [
+      {
+        "fullyQualifiedName": "solution_folder"
+      }
+    ],
+    "spec": {
+      "name": "PR Review Escalation App"
+    },
+    "locks": [],
+    "key": "531dab1e-d2d4-4dd3-99b4-d0da6a0bcab0",
+    "files": []
+  }
+}

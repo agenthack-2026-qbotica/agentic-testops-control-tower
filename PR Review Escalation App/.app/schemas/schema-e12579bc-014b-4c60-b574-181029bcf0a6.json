@@ -1,0 +1,123 @@
+{
+  "Description": "Schema for reviewing and deciding on GitHub pull request escalations.",
+  "inputs": [],
+  "outputs": [
+    {
+      "name": "HumanComment",
+      "description": "Optional comment from the human reviewer regarding the decision.",
+      "required": false,
+      "type": "System.String",
+      "typeNamespace": "system",
+      "isList": false,
+      "collectionDataType": null,
+      "customType": null,
+      "properties": [],
+      "key": "ccbd326b-a8a0-497c-9283-fe01331fc1e0"
+    }
+  ],
+  "inOuts": [
+    {
+      "name": "RepositoryName",
+      "description": "The name of the GitHub repository.",
+      "required": true,
+      "type": "System.String",
+      "typeNamespace": "system",
+      "isList": false,
+      "collectionDataType": null,
+      "customType": null,
+      "properties": [],
+      "key": "0c81eb33-1090-48d8-b339-efceb2449400"
+    },
+    {
+      "name": "Owner",
+      "description": "The owner of the GitHub repository.",
+      "required": true,
+      "type": "System.String",
+      "typeNamespace": "system",
+      "isList": false,
+      "collectionDataType": null,
+      "customType": null,
+      "properties": [],
+      "key": "45141611-870a-4acd-85a4-4c21058f1e57"
+    },
+    {
+      "name": "PullRequestNumber",
+      "description": "The number identifying the pull request.",
+      "required": true,
+      "type": "System.Int32",
+      "typeNamespace": "system",
+      "isList": false,
+      "collectionDataType": null,
+      "customType": null,
+      "properties": [],
+      "key": "482dd75c-4492-4e62-9786-8600db70eb2c"
+    },
+    {
+      "name": "Title",
+      "description": "The title of the pull request.",
+      "required": true,
+      "type": "System.String",
+      "typeNamespace": "system",
+      "isList": false,
+      "collectionDataType": null,
+      "customType": null,
+      "properties": [],
+      "key": "f8b3efb8-6e71-4cfa-bcd8-09ce09a8d53d"
+    },
+    {
+      "name": "Url",
+      "description": "The URL to the GitHub pull request.",
+      "required": true,
+      "type": "System.String",
+      "typeNamespace": "system",
+      "isList": false,
+      "collectionDataType": null,
+      "customType": null,
+      "properties": [],
+      "key": "e828a155-76f9-4d40-90ad-03d60faefcf8"
+    },
+    {
+      "name": "EscalationReason",
+      "description": "The reason provided for escalating this pull request for review.",
+      "required": true,
+      "type": "System.String",
+      "typeNamespace": "system",
+      "isList": false,
+      "collectionDataType": null,
+      "customType": null,
+      "properties": [],
+      "key": "3a6c440e-e2b3-48cd-9e19-6fb688991970"
+    }
+  ],
+  "outcomes": [
+    {
+      "name": "Approve",
+      "description": "Approve the GitHub pull request.",
+      "required": false,
+      "type": "System.String",
+      "typeNamespace": "system",
+      "isList": false,
+      "collectionDataType": null,
+      "customType": null,
+      "properties": [],
+      "key": "0e7e9a1e-4f12-4c3f-bfe5-d4b0a0664199"
+    },
+    {
+      "name": "Reject",
+      "description": "Reject the GitHub pull request.",
+      "required": false,
+      "type": "System.String",
+      "typeNamespace": "system",
+      "isList": false,
+      "collectionDataType": null,
+      "customType": null,
+      "properties": [],
+      "key": "39380143-0ad0-45ec-8ab5-e282a86051db"
+    }
+  ],
+  "actionSchemaGenerationSource": "ai",
+  "id": "ID8ea6c75cc08245ad9d4b43df8149b305",
+  "key": "e12579bc-014b-4c60-b574-181029bcf0a6",
+  "version": 0,
+  "name": "ActionSchema"
+}

@@ -1,0 +1,210 @@
+{
+  "ProjectAppMetadata": {
+    "ActionSchemaPagePage2_Approve_click.xaml": {
+      "AppFormId": "id7d637f7202c448bda62366d08b7cfbfa",
+      "IsAppQueryBuilder": false
+    },
+    "ActionSchemaPagePage_Approve_click.xaml": {
+      "AppFormId": "id390abcd802974628ae077e7e4e4edb2b",
+      "IsAppQueryBuilder": false
+    },
+    "ActionSchemaPagePage2_Reject_click.xaml": {
+      "AppFormId": "id7d637f7202c448bda62366d08b7cfbfa",
+      "IsAppQueryBuilder": false
+    },
+    "ActionSchemaPagePage_Reject_click.xaml": {
+      "AppFormId": "id390abcd802974628ae077e7e4e4edb2b",
+      "IsAppQueryBuilder": false
+    },
+    "ActionSchemaPagePage1_Approve_click.xaml": {
+      "AppFormId": "idfc9df2c5a1854bc5a115ccb9e88cecdb",
+      "IsAppQueryBuilder": false
+    },
+    "ActionSchemaPagePage1_Reject_click.xaml": {
+      "AppFormId": "idfc9df2c5a1854bc5a115ccb9e88cecdb",
+      "IsAppQueryBuilder": false
+    }
+  },
+  "ProjectAppExpressionsMetadata": {
+    "ActionSchemaPagePage2_Approve_click.xaml": [
+      {
+        "Expression": "Controls.ActionSchemaPagePage2.HumanComment.Value",
+        "Tokens": []
+      },
+      {
+        "Expression": "Controls.ActionSchemaPagePage2.RepositoryName.Value",
+        "Tokens": []
+      },
+      {
+        "Expression": "Controls.ActionSchemaPagePage2.Owner.Value",
+        "Tokens": []
+      },
+      {
+        "Expression": "Controls.ActionSchemaPagePage2.PullRequestNumber.Value.ToString",
+        "Tokens": []
+      },
+      {
+        "Expression": "Controls.ActionSchemaPagePage2.Title.Value",
+        "Tokens": []
+      },
+      {
+        "Expression": "Controls.ActionSchemaPagePage2.Url.Value",
+        "Tokens": []
+      },
+      {
+        "Expression": "Controls.ActionSchemaPagePage2.EscalationReason.Value",
+        "Tokens": []
+      }
+    ],
+    "ActionSchemaPagePage_Approve_click.xaml": [
+      {
+        "Expression": "Controls.ActionSchemaPagePage.HumanComment.Value",
+        "Tokens": []
+      },
+      {
+        "Expression": "Controls.ActionSchemaPagePage.RepositoryName.Value",
+        "Tokens": []
+      },
+      {
+        "Expression": "Controls.ActionSchemaPagePage.Owner.Value",
+        "Tokens": []
+      },
+      {
+        "Expression": "Controls.ActionSchemaPagePage.PullRequestNumber.Value.ToString",
+        "Tokens": []
+      },
+      {
+        "Expression": "Controls.ActionSchemaPagePage.Title.Value",
+        "Tokens": []
+      },
+      {
+        "Expression": "Controls.ActionSchemaPagePage.Url.Value",
+        "Tokens": []
+      },
+      {
+        "Expression": "Controls.ActionSchemaPagePage.EscalationReason.Value",
+        "Tokens": []
+      }
+    ],
+    "ActionSchemaPagePage2_Reject_click.xaml": [
+      {
+        "Expression": "Controls.ActionSchemaPagePage2.HumanComment.Value",
+        "Tokens": []
+      },
+      {
+        "Expression": "Controls.ActionSchemaPagePage2.RepositoryName.Value",
+        "Tokens": []
+      },
+      {
+        "Expression": "Controls.ActionSchemaPagePage2.Owner.Value",
+        "Tokens": []
+      },
+      {
+        "Expression": "Controls.ActionSchemaPagePage2.PullRequestNumber.Value.ToString",
+        "Tokens": []
+      },
+      {
+        "Expression": "Controls.ActionSchemaPagePage2.Title.Value",
+        "Tokens": []
+      },
+      {
+        "Expression": "Controls.ActionSchemaPagePage2.Url.Value",
+        "Tokens": []
+      },
+      {
+        "Expression": "Controls.ActionSchemaPagePage2.EscalationReason.Value",
+        "Tokens": []
+      }
+    ],
+    "ActionSchemaPagePage_Reject_click.xaml": [
+      {
+        "Expression": "Controls.ActionSchemaPagePage.HumanComment.Value",
+        "Tokens": []
+      },
+      {
+        "Expression": "Controls.ActionSchemaPagePage.RepositoryName.Value",
+        "Tokens": []
+      },
+      {
+        "Expression": "Controls.ActionSchemaPagePage.Owner.Value",
+        "Tokens": []
+      },
+      {
+        "Expression": "Controls.ActionSchemaPagePage.PullRequestNumber.Value.ToString",
+        "Tokens": []
+      },
+      {
+        "Expression": "Controls.ActionSchemaPagePage.Title.Value",
+        "Tokens": []
+      },
+      {
+        "Expression": "Controls.ActionSchemaPagePage.Url.Value",
+        "Tokens": []
+      },
+      {
+        "Expression": "Controls.ActionSchemaPagePage.EscalationReason.Value",
+        "Tokens": []
+      }
+    ],
+    "ActionSchemaPagePage1_Approve_click.xaml": [
+      {
+        "Expression": "Controls.ActionSchemaPagePage1.HumanComment.Value",
+        "Tokens": []
+      },
+      {
+        "Expression": "Controls.ActionSchemaPagePage1.RepositoryName.Value",
+        "Tokens": []
+      },
+      {
+        "Expression": "Controls.ActionSchemaPagePage1.Owner.Value",
+        "Tokens": []
+      },
+      {
+        "Expression": "Controls.ActionSchemaPagePage1.PullRequestNumber.Value.ToString",
+        "Tokens": []
+      },
+      {
+        "Expression": "Controls.ActionSchemaPagePage1.Title.Value",
+        "Tokens": []
+      },
+      {
+        "Expression": "Controls.ActionSchemaPagePage1.Url.Value",
+        "Tokens": []
+      },
+      {
+        "Expression": "Controls.ActionSchemaPagePage1.EscalationReason.Value",
+        "Tokens": []
+      }
+    ],
+    "ActionSchemaPagePage1_Reject_click.xaml": [
+      {
+        "Expression": "Controls.ActionSchemaPagePage1.HumanComment.Value",
+        "Tokens": []
+      },
+      {
+        "Expression": "Controls.ActionSchemaPagePage1.RepositoryName.Value",
+        "Tokens": []
+      },
+      {
+        "Expression": "Controls.ActionSchemaPagePage1.Owner.Value",
+        "Tokens": []
+      },
+      {
+        "Expression": "Controls.ActionSchemaPagePage1.PullRequestNumber.Value.ToString",
+        "Tokens": []
+      },
+      {
+        "Expression": "Controls.ActionSchemaPagePage1.Title.Value",
+        "Tokens": []
+      },
+      {
+        "Expression": "Controls.ActionSchemaPagePage1.Url.Value",
+        "Tokens": []
+      },
+      {
+        "Expression": "Controls.ActionSchemaPagePage1.EscalationReason.Value",
+        "Tokens": []
+      }
+    ]
+  }
+}
